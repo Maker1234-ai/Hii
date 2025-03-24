@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WP Job Duplicator</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Job Duplicator</h1>
+    
+    <div class="form-group">
+      <label for="job-select">Select Job to Duplicate:</label>
+      <select id="job-select" class="form-control">
+        <option value="">Loading jobs...</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="company-select">MAS Companies For WP Job Manager:</label>
+      <select id="company-select" class="form-control">
+        <option value="">-- Keep Original Company --</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="locations">Enter Locations (comma-separated):</label>
+      <textarea id="locations" class="form-control" placeholder="London, New York, Berlin, etc. (max 500 locations)"></textarea>
+      <p class="location-count">0 locations</p>
+    </div>
+    
+    <div class="form-group">
+      <button id="duplicate-btn" class="btn btn-primary">Duplicate Jobs</button>
+      <div id="progress-container" style="display: none;">
+        <div class="progress-bar-container">
+          <div id="progress-bar"></div>
+        </div>
+        <p id="progress-text">Processing: 0 / 0</p>
+      </div>
+    </div>
+    
+    <div id="status" class="status"></div>
+  </div>
+</body>
+</html>

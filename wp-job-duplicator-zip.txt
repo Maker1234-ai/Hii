@@ -1,0 +1,11 @@
+WP-Job-Duplicator/
+├── manifest.json         # Extension configuration and permissions
+├── popup.html            # The popup UI that appears when clicking the extension icon
+├── popup.css             # Styles for the popup interface
+├── popup.js              # Logic for the popup functionality
+├── background.js         # Background service worker script
+├── content.js            # Content script that runs on WP Job Manager pages
+└── images/               # Extension icons
+    ├── icon16.png        # 16x16 icon
+    ├── icon48.png        # 48x48 icon
+    └── icon128.png       # 128x128 icon
